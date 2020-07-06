@@ -1,0 +1,10 @@
+{
+    "scenes": [
+        {
+            "id": 1,
+            "name": "01_test_scene",
+            "filePath": "~/scenes/01_test_scene.json",
+            "friendlyName": "Test Scene"    
+        }
+    ]
+}

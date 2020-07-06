@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug (with Hot Reload)|Win32">
+      <Configuration>Debug (with Hot Reload)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug (with Hot Reload)|x64">
+      <Configuration>Debug (with Hot Reload)</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug (with Mono Attach)|Win32">
+      <Configuration>Debug (with Mono Attach)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug (with Mono Attach)|x64">
+      <Configuration>Debug (with Mono Attach)</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\components\CameraComponent.cpp" />
+    <ClCompile Include="src\components\ComponentCreationMappings.cpp" />
+    <ClCompile Include="src\components\Component.cpp" />
+    <ClCompile Include="src\components\DirectionalLightComponent.cpp" />
+    <ClCompile Include="src\components\DrawableComponent.cpp" />
+    <ClCompile Include="src\components\LightComponent.cpp" />
+    <ClCompile Include="src\components\MeshComponent.cpp" />
+    <ClCompile Include="src\components\PointLightComponent.cpp" />
+    <ClCompile Include="src\components\ScriptComponent.cpp" />
+    <ClCompile Include="src\core\GameObject.cpp" />
+    <ClCompile Include="src\core\Material.cpp" />
+    <ClCompile Include="src\materials\DefaultSkyboxMaterial.cpp" />
+    <ClCompile Include="src\materials\MaterialCreationMappings.h" />
+    <ClCompile Include="src\resources\Texture2DResource.cpp" />
+    <ClCompile Include="src\resources\TextureCubeResource.cpp" />
+    <ClCompile Include="src\subsystems\CameraManager.cpp" />
+    <ClCompile Include="src\subsystems\EngineAllocator.cpp" />
+    <ClCompile Include="src\subsystems\InputManager.cpp" />
+    <ClCompile Include="src\subsystems\LightManager.cpp" />
+    <ClCompile Include="src\subsystems\MaterialFactory.cpp" />
+    <ClCompile Include="src\core\ResourceId.cpp" />
+    <ClCompile Include="src\materials\DefaultPhongMaterial.cpp" />
+    <ClCompile Include="src\platform\IMGUI\IMGUI.cpp" />
+    <ClCompile Include="src\platform\IMGUI\IMGUIDraw.cpp" />
+    <ClCompile Include="src\platform\IMGUI\IMGUIImplementation.cpp" />
+    <ClCompile Include="src\platform\Shader.cpp" />
+    <ClCompile Include="src\platform\ShaderProgram.cpp" />
+    <ClCompile Include="src\resources\MeshResource.cpp" />
+    <ClCompile Include="src\resources\Resource.cpp" />
+    <ClCompile Include="src\structures\JsonValue.cpp" />
+    <ClCompile Include="src\subsystems\ComponentFactory.cpp" />
+    <ClCompile Include="src\subsystems\GameObjectFactory.cpp" />
+    <ClCompile Include="src\game\Game.cpp" />
+    <ClCompile Include="src\platform\Buffer.cpp" />
+    <ClCompile Include="src\platform\IndexBuffer.cpp" />
+    <ClCompile Include="src\platform\Texture.cpp" />
+    <ClCompile Include="src\platform\Texture2D.cpp" />
+    <ClCompile Include="src\platform\TextureCube.cpp" />
+    <ClCompile Include="src\platform\VertexArray.cpp" />
+    <ClCompile Include="src\platform\VertexBuffer.cpp" />
+    <ClCompile Include="src\platform\VertexBufferLayout.cpp" />
+    <ClCompile Include="src\structures\Transform.cpp" />
+    <ClCompile Include="src\subsystems\Renderer.cpp" />
+    <ClCompile Include="src\subsystems\ResourceManager.cpp" />
+    <ClCompile Include="src\subsystems\SceneManager.cpp" />
+    <ClCompile Include="src\subsystems\ScriptingRuntime.cpp" />
+    <ClCompile Include="src\subsystems\VirtualFileSystem.cpp" />
+    <ClCompile Include="src\subsystems\WindowManager.cpp" />
+    <ClCompile Include="src\utilities\IOUtility.cpp" />
+    <ClCompile Include="src\utilities\Logger.cpp" />
+    <ClCompile Include="src\utilities\MathUtility.cpp" />
+    <ClCompile Include="src\utilities\ShaderIOUtility.cpp" />
+    <ClCompile Include="src\utilities\StringTools.cpp" />
+    <ClCompile Include="src\core\Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\components\CameraComponent.h" />
+    <ClInclude Include="src\components\ComponentCreationMappings.h" />
+    <ClInclude Include="src\components\Component.h" />
+    <ClInclude Include="src\components\DirectionalLightComponent.h" />
+    <ClInclude Include="src\components\DrawableComponent.h" />
+    <ClInclude Include="src\components\LightComponent.h" />
+    <ClInclude Include="src\components\MeshComponent.h" />
+    <ClInclude Include="src\components\PointLightComponent.h" />
+    <ClInclude Include="src\components\ScriptComponent.h" />
+    <ClInclude Include="src\core\ComponentId.h" />
+    <ClInclude Include="src\core\ExportMacro.h" />
+    <ClInclude Include="src\managed\ComponentAttribute.h" />
+    <ClInclude Include="src\subsystems\EngineAllocator.h" />
+    <ClInclude Include="src\core\Material.h" />
+    <ClInclude Include="src\platform\structures\UniformLight.h" />
+    <ClInclude Include="src\platform\structures\VertexAttribute.h" />
+    <ClInclude Include="src\platform\structures\VertexBufferLayoutElement.h" />
+    <ClInclude Include="src\structures\MaterialDefinition.h" />
+    <ClInclude Include="src\managed\GameObjectManaged.h" />
+    <ClInclude Include="src\managed\InternalCalls.h" />
+    <ClInclude Include="src\managed\ScriptCustomAttributeManaged.h" />
+    <ClInclude Include="src\managed\TransformManaged.h" />
+    <ClInclude Include="src\materials\DefaultSkyboxMaterial.h" />
+    <ClInclude Include="src\resources\Texture2DResource.h" />
+    <ClInclude Include="src\resources\TextureCubeResource.h" />
+    <ClInclude Include="src\structures\AssemblyData.h" />
+    <ClInclude Include="src\structures\DependentAssembly.h" />
+    <ClInclude Include="src\structures\DependentAssemblyDefinition.h" />
+    <ClInclude Include="src\structures\MaterialCustomAttribute.h" />
+    <ClInclude Include="src\structures\ObjVertex.h" />
+    <ClInclude Include="src\structures\ScriptInstance.h" />
+    <ClInclude Include="src\subsystems\CameraManager.h" />
+    <ClInclude Include="src\subsystems\InputManager.h" />
+    <ClInclude Include="src\subsystems\LightManager.h" />
+    <ClInclude Include="src\subsystems\MaterialFactory.h" />
+    <ClInclude Include="src\structures\MaterialType.h" />
+    <ClInclude Include="src\core\ResourceData.h" />
+    <ClInclude Include="src\core\ResourceId.h" />
+    <ClInclude Include="src\core\TypeAbstractions.h" />
+    <ClInclude Include="src\core\GameObject.h" />
+    <ClInclude Include="src\materials\DefaultPhongMaterial.h" />
+    <ClInclude Include="src\platform\IMGUI\IMGUIConfig.h" />
+    <ClInclude Include="src\platform\IMGUI\IMGUI.h" />
+    <ClInclude Include="src\platform\IMGUI\IMGUIImplementation.h" />
+    <ClInclude Include="src\platform\IMGUI\IMGUIInternal.h" />
+    <ClInclude Include="src\platform\Shader.h" />
+    <ClInclude Include="src\platform\ShaderProgram.h" />
+    <ClInclude Include="src\resources\MeshResource.h" />
+    <ClInclude Include="src\resources\Resource.h" />
+    <ClInclude Include="src\structures\GLIndexedDrawable.h" />
+    <ClInclude Include="src\structures\JsonValue.h" />
+    <ClInclude Include="src\structures\MaterialTextureType.h" />
+    <ClInclude Include="src\structures\MeshData.h" />
+    <ClInclude Include="src\structures\ResourceLoadState.h" />
+    <ClInclude Include="src\structures\ResourceSet.h" />
+    <ClInclude Include="src\structures\SceneLoadData.h" />
+    <ClInclude Include="src\structures\Vertex1P1U1N.h" />
+    <ClInclude Include="src\subsystems\ComponentFactory.h" />
+    <ClInclude Include="src\subsystems\GameObjectFactory.h" />
+    <ClInclude Include="src\core\Singleton.h" />
+    <ClInclude Include="src\core\Subsystem.h" />
+    <ClInclude Include="src\game\Game.h" />
+    <ClInclude Include="src\game\GameCreateInfo.h" />
+    <ClInclude Include="src\platform\Buffer.h" />
+    <ClInclude Include="src\platform\GLHelper.h" />
+    <ClInclude Include="src\platform\IndexBuffer.h" />
+    <ClInclude Include="src\platform\Texture.h" />
+    <ClInclude Include="src\platform\Texture2D.h" />
+    <ClInclude Include="src\platform\TextureCube.h" />
+    <ClInclude Include="src\platform\VertexArray.h" />
+    <ClInclude Include="src\platform\VertexBuffer.h" />
+    <ClInclude Include="src\platform\VertexBufferLayout.h" />
+    <ClInclude Include="src\structures\Scene.h" />
+    <ClInclude Include="src\structures\Transform.h" />
+    <ClInclude Include="src\structures\MaterialData.h" />
+    <ClInclude Include="src\subsystems\Renderer.h" />
+    <ClInclude Include="src\subsystems\ResourceManager.h" />
+    <ClInclude Include="src\subsystems\SceneManager.h" />
+    <ClInclude Include="src\subsystems\ScriptingRuntime.h" />
+    <ClInclude Include="src\subsystems\VirtualFileSystem.h" />
+    <ClInclude Include="src\subsystems\WindowManager.h" />
+    <ClInclude Include="src\utilities\HashUtility.h" />
+    <ClInclude Include="src\utilities\IOUtility.h" />
+    <ClInclude Include="src\utilities\Logger.h" />
+    <ClInclude Include="src\platform\structures\TextureData.h" />
+    <ClInclude Include="src\utilities\MathUtility.h" />
+    <ClInclude Include="src\utilities\ShaderIOUtility.h" />
+    <ClInclude Include="src\utilities\StringTools.h" />
+    <ClInclude Include="src\core\Timer.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A5C357C3-D9A7-4830-AD95-BC2B037E742E}</ProjectGuid>
+    <RootNamespace>GraphicsApplication</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>HorizonEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Hot Reload)|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Mono Attach)|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Hot Reload)|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Mono Attach)|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Hot Reload)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Mono Attach)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Hot Reload)|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Mono Attach)|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\Intermediate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Hot Reload)|Win32'">
+    <OutDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\Intermediate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Mono Attach)|Win32'">
+    <OutDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\Intermediate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\Intermediate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\Intermediate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Hot Reload)|x64'">
+    <OutDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\Intermediate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Mono Attach)|x64'">
+    <OutDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\Intermediate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\Intermediate\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(ProjectDir)Dependencies;$(ProjectDir)src;$(ProjectDir)Dependencies\glew\include;$(ProjectDir)Dependencies\glfw\include;$(MONO_PATH)include\mono-2.0</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;HORIZON_BUILD;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4091</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)HorizonEngine\Dependencies\glew\lib\$(Platform)\;$(SolutionDir)HorizonEngine\Dependencies\glfw\lib\$(Platform)\;$(MONO_PATH)lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;mono-2.0-sgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Hot Reload)|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(ProjectDir)Dependencies;$(ProjectDir)src;$(ProjectDir)Dependencies\glew\include;$(ProjectDir)Dependencies\glfw\include;$(MONO_PATH)include\mono-2.0</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;HORIZON_BUILD;DEBUG;MONO_HOT_RELOAD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4091</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)HorizonEngine\Dependencies\glew\lib\$(Platform)\;$(SolutionDir)HorizonEngine\Dependencies\glfw\lib\$(Platform)\;$(MONO_PATH)lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;mono-2.0-sgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Mono Attach)|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(ProjectDir)Dependencies;$(ProjectDir)src;$(ProjectDir)Dependencies\glew\include;$(ProjectDir)Dependencies\glfw\include;$(MONO_PATH)include\mono-2.0</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;HORIZON_BUILD;DEBUG;MONO_DEBUG_ATTACH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4091; 4251;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)HorizonEngine\Dependencies\glew\lib\$(Platform)\;$(SolutionDir)HorizonEngine\Dependencies\glfw\lib\$(Platform)\;$(MONO_PATH)lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;mono-2.0-sgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(ProjectDir)Dependencies;$(ProjectDir)src;$(ProjectDir)Dependencies\glew\include;$(ProjectDir)Dependencies\glfw\include;$(MONO_PATH)include\mono-2.0</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;HORIZON_BUILD;DEBUG;_SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4091;;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)HorizonEngine\Dependencies\glew\lib\$(Platform)\;$(SolutionDir)HorizonEngine\Dependencies\glfw\lib\$(Platform)\;$(MONO_PATH)lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;mono-2.0-sgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /S /I /E /Y "$(SolutionDir)_GameAssets" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)\GameAssets\"
+
+xcopy /Y  "$(SolutionDir)HorizonEngine\lib\$(Configuration)\$(Platform)\HorizonEngine.dll" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"
+xcopy /Y  "$(SolutionDir)HorizonEngine\lib\$(Configuration)\$(Platform)\HorizonEngine.pdb" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"
+
+xcopy /Y  "$(MONO_PATH)bin\mono-2.0-sgen.dll"  "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Hot Reload)|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(ProjectDir)Dependencies;$(ProjectDir)src;$(ProjectDir)Dependencies\glew\include;$(ProjectDir)Dependencies\glfw\include;$(MONO_PATH)include\mono-2.0</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;HORIZON_BUILD;DEBUG;MONO_HOT_RELOAD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4091;;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)HorizonEngine\Dependencies\glew\lib\$(Platform)\;$(SolutionDir)HorizonEngine\Dependencies\glfw\lib\$(Platform)\;$(MONO_PATH)lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;mono-2.0-sgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /S /I /E /Y "$(SolutionDir)_GameAssets" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)\GameAssets\"
+
+xcopy /Y  "$(SolutionDir)HorizonEngine\lib\$(Configuration)\$(Platform)\HorizonEngine.dll" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"
+xcopy /Y  "$(SolutionDir)HorizonEngine\lib\$(Configuration)\$(Platform)\HorizonEngine.pdb" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"
+
+xcopy /Y  "$(MONO_PATH)bin\mono-2.0-sgen.dll"  "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Mono Attach)|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(ProjectDir)Dependencies;$(ProjectDir)src;$(ProjectDir)Dependencies\glew\include;$(ProjectDir)Dependencies\glfw\include;$(MONO_PATH)include\mono-2.0</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;HORIZON_BUILD;DEBUG;MONO_DEBUG_ATTACH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4091; 4251;;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)HorizonEngine\Dependencies\glew\lib\$(Platform)\;$(SolutionDir)HorizonEngine\Dependencies\glfw\lib\$(Platform)\;$(MONO_PATH)lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;mono-2.0-sgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /S /I /E /Y "$(SolutionDir)_GameAssets" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)\GameAssets\"
+
+xcopy /Y  "$(SolutionDir)HorizonEngine\lib\$(Configuration)\$(Platform)\HorizonEngine.dll" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"
+xcopy /Y  "$(SolutionDir)HorizonEngine\lib\$(Configuration)\$(Platform)\HorizonEngine.pdb" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"
+
+xcopy /Y  "$(MONO_PATH)bin\mono-2.0-sgen.dll"  "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(ProjectDir)Dependencies;$(ProjectDir)src;$(ProjectDir)Dependencies\glew\include;$(ProjectDir)Dependencies\glfw\include;$(MONO_PATH)include\mono-2.0</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;HORIZON_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4091</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)HorizonEngine\Dependencies\glew\lib\$(Platform)\;$(SolutionDir)HorizonEngine\Dependencies\glfw\lib\$(Platform)\;$(MONO_PATH)lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;mono-2.0-sgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(ProjectDir)Dependencies;$(ProjectDir)src;$(ProjectDir)Dependencies\glew\include;$(ProjectDir)Dependencies\glfw\include;$(MONO_PATH)include\mono-2.0</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;HORIZON_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4091;;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)HorizonEngine\Dependencies\glew\lib\$(Platform)\;$(SolutionDir)HorizonEngine\Dependencies\glfw\lib\$(Platform)\;$(MONO_PATH)lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;mono-2.0-sgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /S /I /E /Y "$(SolutionDir)_GameAssets" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)\GameAssets\"
+
+xcopy /Y  "$(SolutionDir)HorizonEngine\lib\$(Configuration)\$(Platform)\HorizonEngine.dll" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"
+xcopy /Y  "$(SolutionDir)HorizonEngine\lib\$(Configuration)\$(Platform)\HorizonEngine.pdb" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"
+
+xcopy /Y  "$(MONO_PATH)bin\mono-2.0-sgen.dll"  "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

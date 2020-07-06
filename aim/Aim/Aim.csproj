@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{217D9FD3-073C-4A66-B78C-B18895F990E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aim</RootNamespace>
+    <AssemblyName>Aim</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GlmNet, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DustBot\HorizonEngine\scriptingruntime\Dependencies\GlmNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjParser">
+      <HintPath>dep\ObjParser.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agents\AimAgent.cs" />
+    <Compile Include="Agents\AimAgentFactory.cs" />
+    <Compile Include="Flocking\AimFlockingAgent.cs" />
+    <Compile Include="AimMath.cs" />
+    <Compile Include="BehaviourTree\AimBehaviourTree.cs" />
+    <Compile Include="BehaviourTree\AimBehaviourTreeConditionNode.cs" />
+    <Compile Include="BehaviourTree\AimBehaviourTreeRootNode.cs" />
+    <Compile Include="BehaviourTree\AimCondition.cs" />
+    <Compile Include="BehaviourTree\AimExecutionNode.cs" />
+    <Compile Include="BehaviourTree\ControlFlowNodes\AimSelectorNode.cs" />
+    <Compile Include="Blackboards\AimBlackboardBase.cs" />
+    <Compile Include="Blackboards\AimBlackboardManager.cs" />
+    <Compile Include="Blackboards\AimBlackboardKey.cs" />
+    <Compile Include="Blackboards\AimDefaultBlackboard.cs" />
+    <Compile Include="Blackboards\AimFlockingBlackboard.cs" />
+    <Compile Include="Core\AimGenericDictionary.cs" />
+    <Compile Include="Core\AimRandom.cs" />
+    <Compile Include="Core\AimTaskStatus.cs" />
+    <Compile Include="BehaviourTree\ControlFlowNodes\AimSequenceNode.cs" />
+    <Compile Include="Core\AimConfigManager.cs" />
+    <Compile Include="Core\AimLib.cs" />
+    <Compile Include="Core\AimLogger.cs" />
+    <Compile Include="Core\AimNode.cs" />
+    <Compile Include="Core\ObjectPool\AimObjectPool.cs" />
+    <Compile Include="Core\AimSingleton.cs" />
+    <Compile Include="Core\AimTransform.cs" />
+    <Compile Include="Core\ObjectPool\AimPoolableObject.cs" />
+    <Compile Include="Exceptions\AimFileIOException.cs" />
+    <Compile Include="Flocking\AimFlockingBlackboard.cs" />
+    <Compile Include="Flocking\AimFlockingVolume.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="NavMesh\AimNavMesh.cs" />
+    <Compile Include="NavMesh\AimNavMeshGenerator.cs" />
+    <Compile Include="NavMesh\AimNavMeshTriangle.cs" />
+    <Compile Include="Pathfinding\AimAStar.cs" />
+    <Compile Include="Pathfinding\AimAStarPath.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structures\AimConfigFile.cs" />
+    <Compile Include="Structures\AimCreateInfo.cs" />
+    <Compile Include="Structures\LogSeverity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

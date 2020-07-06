@@ -1,0 +1,34 @@
+{
+    "id": "",
+    "shaderLocation": "~/shaders/default_phong_shader.glsl",
+    "attributes":[
+        {
+            "name": "M_DiffuseTexture",
+            "type": "TEXTURE"
+        },
+        {
+            "name": "M_NormalTexture",
+            "type": "TEXTURE"
+        },
+        {
+            "name": "M_SpecularTexture",
+            "type": "TEXTURE"
+        },
+        {
+            "name": "M_AlbedoIntensity",
+            "type": "FLOAT1"
+        },
+        {
+            "name": "M_SpecularScale",
+            "type": "FLOAT1"
+        },
+        {
+            "name": "M_Shininess",
+            "type": "FLOAT1"
+        },
+        {
+            "name": "M_Roughness",
+            "type": "FLOAT1"
+        }
+    ]
+}

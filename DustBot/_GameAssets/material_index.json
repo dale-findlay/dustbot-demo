@@ -1,0 +1,244 @@
+{
+    "materialTypes": [
+        {
+            "id": 1,
+            "name": "DefaultPhongMaterial",
+            "shaderLocation": "~/shaders/default_phong_shader.glsl"
+        },
+        {
+            "id": 2,
+            "name": "DefaultSkyboxMaterial",
+            "shaderLocation": "~/shaders/default_skybox_shader.glsl"
+        }
+    ],
+    "masterMaterials": [
+        {
+            "id": "69c80027860152f013c4906142116517004f3409",
+            "materialTypeId": 1,
+            "customAttributes": [
+                {
+                    "name": "M_DiffuseTexture",
+                    "attributeType": "TEXTURE2D",
+                    "value": "8b931c12b9ada58cbc84dd53913e0bb74c664f1c"
+                },
+                {
+                    "name": "M_AlbedoIntensity",
+                    "attributeType": "FLOAT1",
+                    "value": 0.95
+                },
+                {
+                    "name": "M_SpecularScale",
+                    "attributeType": "FLOAT1",
+                    "value": 0.25
+                },
+                {
+                    "name": "M_Shininess",
+                    "attributeType": "FLOAT1",
+                    "value": 20.0
+                },
+                {
+                    "name": "M_Roughness",
+                    "attributeType": "FLOAT1",
+                    "value": 1.0
+                }
+            ]
+        },
+        {
+            "id": "0a0239dbc5af04d9e54fa63526c2330b379a91af",
+            "materialTypeId": 1,
+            "customAttributes": [
+                {
+                    "name": "M_DiffuseTexture",
+                    "attributeType": "TEXTURE2D",
+                    "value": "db609e25b6252007c133908dd02528af60f9d02c"
+                },
+                {
+                    "name": "M_AlbedoIntensity",
+                    "attributeType": "FLOAT1",
+                    "value": 0.95
+                },
+                {
+                    "name": "M_SpecularScale",
+                    "attributeType": "FLOAT1",
+                    "value": 0.25
+                },
+                {
+                    "name": "M_Shininess",
+                    "attributeType": "FLOAT1",
+                    "value": 20.0
+                },
+                {
+                    "name": "M_Roughness",
+                    "attributeType": "FLOAT1",
+                    "value": 1.0
+                }
+            ]
+        },
+        {
+            "id": "14e44100e7234b8784203dc800b2b0dd50c5ac80",
+            "materialTypeId": 1,
+            "customAttributes": [
+                {
+                    "name": "M_DiffuseTexture",
+                    "attributeType": "TEXTURE2D",
+                    "value": "3388631eb6b46fd3bb38c9b1a64d3dcd471e73a8"
+                },
+                {
+                    "name": "M_AlbedoIntensity",
+                    "attributeType": "FLOAT1",
+                    "value": 0.95
+                },
+                {
+                    "name": "M_SpecularScale",
+                    "attributeType": "FLOAT1",
+                    "value": 0.25
+                },
+                {
+                    "name": "M_Shininess",
+                    "attributeType": "FLOAT1",
+                    "value": 20.0
+                },
+                {
+                    "name": "M_Roughness",
+                    "attributeType": "FLOAT1",
+                    "value": 1.0
+                }
+            ]
+        },
+        {
+            "id": "4d23f8fb20790736d2385eea5a8b0c22df6bd299",
+            "materialTypeId": 1,
+            "customAttributes": [
+                {
+                    "name": "M_DiffuseTexture",
+                    "attributeType": "TEXTURE2D",
+                    "value": "dc71900e0d29e6e3f177363387b118b5d7a20b22"
+                },
+                {
+                    "name": "M_AlbedoIntensity",
+                    "attributeType": "FLOAT1",
+                    "value": 0.95
+                },
+                {
+                    "name": "M_SpecularScale",
+                    "attributeType": "FLOAT1",
+                    "value": 0.25
+                },
+                {
+                    "name": "M_Shininess",
+                    "attributeType": "FLOAT1",
+                    "value": 20.0
+                },
+                {
+                    "name": "M_Roughness",
+                    "attributeType": "FLOAT1",
+                    "value": 1.0
+                }
+            ]
+        },
+        {
+            "id": "70959f13ded9789c2776899a164ad05b3c51b428",
+            "materialTypeId": 1,
+            "customAttributes": [
+                {
+                    "name": "M_DiffuseTexture",
+                    "attributeType": "TEXTURE2D",
+                    "value": "d71c0265e4ab484995ea4ad7b959a220de00e569"
+                },
+                {
+                    "name": "M_AlbedoIntensity",
+                    "attributeType": "FLOAT1",
+                    "value": 0.95
+                },
+                {
+                    "name": "M_SpecularScale",
+                    "attributeType": "FLOAT1",
+                    "value": 0.25
+                },
+                {
+                    "name": "M_Shininess",
+                    "attributeType": "FLOAT1",
+                    "value": 20.0
+                },
+                {
+                    "name": "M_Roughness",
+                    "attributeType": "FLOAT1",
+                    "value": 1.0
+                }
+            ]
+        },
+        {
+            "id": "29e4d82f6ef1fad38fcb277a739d736a95235d1c",
+            "materialTypeId": 1,
+            "customAttributes": [
+                {
+                    "name": "M_DiffuseTexture",
+                    "attributeType": "TEXTURE2D",
+                    "value": "83ddec4b6c9e2a55ada6509f1b1f2e277835dca6"
+                },
+                {
+                    "name": "M_AlbedoIntensity",
+                    "attributeType": "FLOAT1",
+                    "value": 0.95
+                },
+                {
+                    "name": "M_SpecularScale",
+                    "attributeType": "FLOAT1",
+                    "value": 0.25
+                },
+                {
+                    "name": "M_Shininess",
+                    "attributeType": "FLOAT1",
+                    "value": 20.0
+                },
+                {
+                    "name": "M_Roughness",
+                    "attributeType": "FLOAT1",
+                    "value": 1.0
+                }
+            ]
+        },
+        {
+            "id": "158b4b107e5f5c5135b637870ad6d066771e8441",
+            "materialTypeId": 1,
+            "customAttributes": [
+                {
+                    "name": "M_DiffuseTexture",
+                    "attributeType": "TEXTURE2D",
+                    "value": "9962b46fd7b7312615673f3f0e3e78800ede031e"
+                },
+                {
+                    "name": "M_AlbedoIntensity",
+                    "attributeType": "FLOAT1",
+                    "value": 0.95
+                },
+                {
+                    "name": "M_SpecularScale",
+                    "attributeType": "FLOAT1",
+                    "value": 0.25
+                },
+                {
+                    "name": "M_Shininess",
+                    "attributeType": "FLOAT1",
+                    "value": 20.0
+                },
+                {
+                    "name": "M_Roughness",
+                    "attributeType": "FLOAT1",
+                    "value": 1.0
+                }
+            ]
+        },
+        {
+            "id": "5375705eaee425be831291d51c5bfce8ca7fbbf4",
+            "materialTypeId": 2,
+            "customAttributes": [
+                {
+                    "name": "M_SkyboxTexture",
+                    "attributeType": "TEXTURECUBE",
+                    "value": "0f97764da30bc9a1d1acf6c4ab14bf48f0efb4f9"
+                }
+            ]
+        }
+    ]
+}

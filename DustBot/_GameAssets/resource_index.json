@@ -1,0 +1,117 @@
+{
+    "resourceTypes": [
+        {
+            "id": 1,
+            "name": "MeshResource"
+        },
+        {
+            "id": 2,
+            "name": "ShaderProgramResource"
+        },
+        {
+            "id": 3,
+            "name": "Texture2DResource"
+        },
+        {
+            "id": 4,
+            "name": "TextureCubeResource"
+        }
+    ],
+    "resources": [
+        {
+            "resourceId": "2e869b90408cf87d3a2c2dc341ff97a860933e38",
+            "resourceType": 1,
+            "resourcePath": "~/meshes/primitives/plane.obj"
+        },
+        {
+            "resourceId": "604cb1dde4455263ed56836c9b84e69a6ab515fc",
+            "resourceType": 1,
+            "resourcePath": "~/meshes/primitives/sphere.obj"
+        },
+        {
+            "resourceId": "94f2c66d9fdb35ae1147076a03fa62d8edc30fd7",
+            "resourceType": 1,
+            "resourcePath": "~/meshes/floor.obj"
+        },
+        {
+            "resourceId": "c1ef7d33631ffeca1d5e2225a8c174795a453911",
+            "resourceType": 1,
+            "resourcePath": "~/meshes/rocks.obj"
+        },
+        {
+            "resourceId": "3d7455dbe0f5c653df48a286810542286cba1107",
+            "resourceType": 1,
+            "resourcePath": "~/meshes/skybox.obj"
+        },
+        {
+            "resourceId": "da85e03ba7e957696569f6c76ef1948ade4d1136",
+            "resourceType": 1,
+            "resourcePath": "~/meshes/suzanne.obj"
+        },
+        {
+            "resourceId": "1e20975e2f2cb4e7284d740d6c9c2bd67bac8734",
+            "resourceType": 1,
+            "resourcePath": "~/meshes/dustbot.obj"
+        },
+        {
+            "resourceId": "f5984f0342bb0dbd46c8505dbf14651131894cb1",
+            "resourceType": 1,
+            "resourcePath": "~/meshes/navmeshes/01_test_scene.obj"
+        },
+        {
+            "resourceId": "fa0bf72d23f44df33bd27189f751f9a997d26672",
+            "resourceType": 1,
+            "resourcePath": "~/meshes/dust-post.obj"
+        },
+        {
+            "resourceId": "9647c60af393400319631cc6246387a747e6e3e6",
+            "resourceType": 1,
+            "resourcePath": "~/meshes/bird.obj"
+        },
+        {
+            "resourceId": "79d549df7cd29208ebf16966b3f15474d14a3e31",
+            "resourceType": 1,
+            "resourcePath": "~/meshes/couch.obj"
+        },
+        {
+            "resourceId": "83ddec4b6c9e2a55ada6509f1b1f2e277835dca6",
+            "resourceType": 3,
+            "resourcePath": "~/textures/couch-1.png"
+        },
+        {
+            "resourceId": "db609e25b6252007c133908dd02528af60f9d02c",
+            "resourceType": 3,
+            "resourcePath": "~/textures/wall.jpg"
+        },
+        {
+            "resourceId": "9962b46fd7b7312615673f3f0e3e78800ede031e",
+            "resourceType": 3,
+            "resourcePath": "~/textures/couch-2.jpg"
+        },
+        {
+            "resourceId": "3388631eb6b46fd3bb38c9b1a64d3dcd471e73a8",
+            "resourceType": 3,
+            "resourcePath": "~/textures/floor-texture.jpg"
+        },
+        {
+            "resourceId": "d71c0265e4ab484995ea4ad7b959a220de00e569",
+            "resourceType": 3,
+            "resourcePath": "~/textures/nav-mesh-texture.png"
+        },
+        {
+            "resourceId": "dc71900e0d29e6e3f177363387b118b5d7a20b22",
+            "resourceType": 3,
+            "resourcePath": "~/textures/rock-texture.jpg"
+        },
+        {
+            "resourceId": "8b931c12b9ada58cbc84dd53913e0bb74c664f1c",
+            "resourceType": 3,
+            "resourcePath": "~/textures/default_texture.png"
+        },
+        {
+            "resourceId": "0f97764da30bc9a1d1acf6c4ab14bf48f0efb4f9",
+            "resourceType": 4,
+            "resourcePath": "~/textures/skybox/DefaultSkybox.json"
+        }
+    ]
+}

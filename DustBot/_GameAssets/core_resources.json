@@ -1,0 +1,5 @@
+{
+    "coreResources":[
+        "~/shaders/default_phong_shader.glsl"
+    ]
+}

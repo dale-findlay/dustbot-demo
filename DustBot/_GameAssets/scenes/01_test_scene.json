@@ -1,0 +1,315 @@
+{
+    "objects": [
+        {
+            "name": "Floor",
+            "transform": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "eulerRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "components": [
+                {
+                    "componentName": "MeshComponent",
+                    "meshResourceId": "94f2c66d9fdb35ae1147076a03fa62d8edc30fd7",
+                    "materialIds": [
+                        "0a0239dbc5af04d9e54fa63526c2330b379a91af",
+                        "14e44100e7234b8784203dc800b2b0dd50c5ac80"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Couch",
+            "transform": {
+                "position": {
+                    "x": -37.7,
+                    "y": 0,
+                    "z": -12.4
+                },
+                "eulerRotation": {
+                    "x": 0.0,
+                    "y": 15,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "components": [
+                {
+                    "meshResourceId": "79d549df7cd29208ebf16966b3f15474d14a3e31",
+                    "materialIds": [
+                        "29e4d82f6ef1fad38fcb277a739d736a95235d1c",
+                        "158b4b107e5f5c5135b637870ad6d066771e8441"
+                    ],
+                    "componentName": "MeshComponent"
+                }
+            ]
+        },
+        {
+            "name": "Dust Post",
+            "transform": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "eulerRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "components": [
+                {
+                    "componentName": "MeshComponent",
+                    "meshResourceId": "fa0bf72d23f44df33bd27189f751f9a997d26672",
+                    "materialIds": []
+                }
+            ]
+        },
+        {
+            "name": "Skybox",
+            "transform": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "eulerRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "components": [
+                {
+                    "componentName": "MeshComponent",
+                    "meshResourceId": "3d7455dbe0f5c653df48a286810542286cba1107",
+                    "materialIds": [
+                        "5375705eaee425be831291d51c5bfce8ca7fbbf4"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Nav Mesh",
+            "transform": {
+                "position": {
+                    "x": 0.0,
+                    "y": 1,
+                    "z": 0.0
+                },
+                "eulerRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "components": [
+                {
+                    "componentName": "MeshComponent",
+                    "meshResourceId": "f5984f0342bb0dbd46c8505dbf14651131894cb1",
+                    "materialIds": [
+                        "70959f13ded9789c2776899a164ad05b3c51b428"
+                    ],
+                    "wireframe": true
+                }
+            ]
+        },
+        {
+            "name": "DustBot",
+            "transform": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "eulerRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "components": [
+                {
+                    "componentName": "MeshComponent",
+                    "meshResourceId": "1e20975e2f2cb4e7284d740d6c9c2bd67bac8734",
+                    "materialIds": []
+                }
+            ],
+            "scripts": [
+                {
+                    "scriptName": "DustBotAgent",
+                    "customAttributes": [
+                        {
+                            "name": "NavMesh",
+                            "value": "~/meshes/navmeshes/01_test_scene.obj"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Main Camera",
+            "transform": {
+                "position": {
+                    "x": 107,
+                    "y": 48,
+                    "z": -70
+                },
+                "eulerRotation": {
+                    "x": 160,
+                    "y": 50,
+                    "z": -180
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "components": [
+                {
+                    "componentName": "CameraComponent",
+                    "cameraType": "Perspective"
+                }
+            ],
+            "scripts": [
+                {
+                    "scriptName": "CameraScript",
+                    "customAttributes": [
+                        {
+                            "name": "CameraType",
+                            "value": "Debug"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Directional Light",
+            "transform": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "eulerRotation": {
+                    "x": -30,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "components": [
+                {
+                    "componentName": "DirectionalLightComponent",
+                    "intensity": 1.0
+                }
+            ]
+        },
+        {
+            "name": "Point Light",
+            "transform": {
+                "position": {
+                    "x": 0.0,
+                    "y": 20.0,
+                    "z": 0.0
+                },
+                "eulerRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "components": [
+                {
+                    "componentName": "PointLightComponent",
+                    "intensity": 1.0
+                }
+            ]
+        },
+        {
+            "name": "Flocking",
+            "transform": {
+                "position": {
+                    "x": 0.0,
+                    "y": 20.0,
+                    "z": 0.0
+                },
+                "eulerRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "components": [
+            ],
+            "scripts":[
+                {
+                    "scriptName": "FlockingDemo",
+                    "customAttributes": [
+                        {
+                            "name": "boidModelResourceId",
+                            "value": "9647c60af393400319631cc6246387a747e6e3e6"
+                        },
+                        {
+                            "name": "boidCount",
+                            "value": "10"
+                        }
+
+                    ]
+                }
+            ]
+        }
+    ]
+}

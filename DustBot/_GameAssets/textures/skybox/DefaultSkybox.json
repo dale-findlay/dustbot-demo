@@ -1,0 +1,10 @@
+{
+    "cubeResource": {
+        "right": "DefaultSkybox_Right.jpg",
+        "left": "DefaultSkybox_Left.jpg",
+        "top": "DefaultSkybox_Top.jpg",
+        "bottom": "DefaultSkybox_Bottom.jpg",
+        "front": "DefaultSkybox_Front.jpg",
+        "back": "DefaultSkybox_Back.jpg"
+    }
+}
