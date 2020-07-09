@@ -11,3 +11,7 @@ You'll need to make sure the $(MONO_PATH) variable is setup like this:
 C:\Program Files\Mono
 
 And if you install it while the project is open, you'll need to restart visual studio for it to load the environment variable changes.
+
+
+# If you cant get it to build:
+There is a build that will work also includeded in the repo: [Click Here](https://github.com/dale-findlay/dustbot-demo/blob/master/DustBot_Build.zip)
