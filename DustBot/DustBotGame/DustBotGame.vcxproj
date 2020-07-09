@@ -140,18 +140,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)Binaries\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)Binaries\$(Configuration)\$(Platform)\Intermediate\</IntDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Hot Reload)|x64'">
     <OutDir>$(SolutionDir)Binaries\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)Binaries\$(Configuration)\$(Platform)\Intermediate\</IntDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Mono Attach)|x64'">
     <OutDir>$(SolutionDir)Binaries\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)Binaries\$(Configuration)\$(Platform)\Intermediate\</IntDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)Binaries\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)Binaries\$(Configuration)\$(Platform)\Intermediate\</IntDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -159,7 +163,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)HorizonEngine\Dependencies;$(SolutionDir)HorizonEngine\src;$(SolutionDir)HorizonEngine\Dependencies\glew\include;$(SolutionDir)HorizonEngine\Dependencies\glfw\include;$(MONO_PATH)include\mono-2.0</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)HorizonEngine\Dependencies;$(SolutionDir)HorizonEngine\src;$(SolutionDir)HorizonEngine\Dependencies\glew\include;$(SolutionDir)HorizonEngine\Dependencies\glfw\include;C:\Program Files\Mono\include\mono-2.0</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG;_SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
@@ -186,7 +190,7 @@ xcopy /Y  "$(MONO_PATH)bin\mono-2.0-sgen.dll"  "$(SolutionDir)Binaries\$(Configu
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)HorizonEngine\Dependencies;$(SolutionDir)HorizonEngine\src;$(SolutionDir)HorizonEngine\Dependencies\glew\include;$(SolutionDir)HorizonEngine\Dependencies\glfw\include;$(MONO_PATH)include\mono-2.0</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)HorizonEngine\Dependencies;$(SolutionDir)HorizonEngine\src;$(SolutionDir)HorizonEngine\Dependencies\glew\include;$(SolutionDir)HorizonEngine\Dependencies\glfw\include;C:\Program Files\Mono\include\mono-2.0</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
@@ -213,7 +217,7 @@ xcopy /Y  "$(MONO_PATH)bin\mono-2.0-sgen.dll"  "$(SolutionDir)Binaries\$(Configu
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)HorizonEngine\Dependencies;$(SolutionDir)HorizonEngine\src;$(SolutionDir)HorizonEngine\Dependencies\glew\include;$(SolutionDir)HorizonEngine\Dependencies\glfw\include;$(MONO_PATH)include\mono-2.0</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)HorizonEngine\Dependencies;$(SolutionDir)HorizonEngine\src;$(SolutionDir)HorizonEngine\Dependencies\glew\include;$(SolutionDir)HorizonEngine\Dependencies\glfw\include;C:\Program Files\Mono\include\mono-2.0</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -327,7 +331,7 @@ xcopy /Y  "$(MONO_PATH)bin\mono-2.0-sgen.dll"  "$(SolutionDir)Binaries\$(Configu
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)HorizonEngine\Dependencies;$(SolutionDir)HorizonEngine\src;$(SolutionDir)HorizonEngine\Dependencies\glew\include;$(SolutionDir)HorizonEngine\Dependencies\glfw\include;$(MONO_PATH)include\mono-2.0</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)HorizonEngine\Dependencies;$(SolutionDir)HorizonEngine\src;$(SolutionDir)HorizonEngine\Dependencies\glew\include;$(SolutionDir)HorizonEngine\Dependencies\glfw\include;C:\Program Files\Mono\include\mono-2.0</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
