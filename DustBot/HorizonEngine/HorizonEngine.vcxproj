@@ -288,7 +288,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\Intermediate\</IntDir>
-    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Hot Reload)|x64'">
     <OutDir>$(ProjectDir)lib\$(Configuration)\$(Platform)\</OutDir>
@@ -370,7 +370,7 @@
 xcopy /Y  "$(SolutionDir)HorizonEngine\lib\$(Configuration)\$(Platform)\HorizonEngine.dll" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"
 xcopy /Y  "$(SolutionDir)HorizonEngine\lib\$(Configuration)\$(Platform)\HorizonEngine.pdb" "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"
 
-xcopy /Y  "$(MONO_PATH)bin\mono-2.0-sgen.dll"  "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"</Command>
+xcopy /Y  "$(MONO_PATH)\bin\mono-2.0-sgen.dll"  "$(SolutionDir)Binaries\$(Configuration)\$(Platform)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (with Hot Reload)|x64'">

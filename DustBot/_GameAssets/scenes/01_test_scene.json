@@ -34,13 +34,13 @@
             "name": "Couch",
             "transform": {
                 "position": {
-                    "x": -37.7,
+                    "x": -30,
                     "y": 0,
-                    "z": -12.4
+                    "z": -28
                 },
                 "eulerRotation": {
                     "x": 0.0,
-                    "y": 15,
+                    "y": 0,
                     "z": 0.0
                 },
                 "scale": {

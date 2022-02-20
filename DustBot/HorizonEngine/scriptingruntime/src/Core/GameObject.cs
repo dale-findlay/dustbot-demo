@@ -1,6 +1,5 @@
 ﻿using GlmNet;
 using HorizonEngine.Structures;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;

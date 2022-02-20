@@ -1,16 +1,8 @@
-newmtl couch1:lambert3SG
+newmtl _test_scene:lambert2SG
 illum 4
-Kd 0.00 0.00 0.00
+Kd 0.00 0.43 1.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd simple-couch-for-blender-cycles-3d-model-blend.png
-Ni 1.00
-newmtl couch1:lambert4SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd CM6761BG-texture.jpg
 Ni 1.00
 newmtl dust_post:initialShadingGroup
 illum 4
@@ -24,15 +16,29 @@ Kd 0.50 0.50 0.50
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 Ni 1.00
-newmtl floor:initialShadingGroup
+newmtl initialShadingGroup
 illum 4
 Kd 0.50 0.50 0.50
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 Ni 1.00
-newmtl skybox:initialShadingGroup
+newmtl lambert2SG
 illum 4
-Kd 0.50 0.50 0.50
+Kd 0.19 0.19 0.19
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd couch-2.jpg
+Ni 1.00
+newmtl lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd couch-1.png
 Ni 1.00
