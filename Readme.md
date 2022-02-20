@@ -39,3 +39,7 @@ There is a build step that copies all the assemblies to the right place so you s
 This should output a compiled version of the demo to the Binaries folder.
 ``dustbot-demo/DustBot/Binaries/Debug/x64``
 
+The output should look like this:
+![image](https://user-images.githubusercontent.com/15716906/154826337-484deaf0-b99a-4f15-a8d4-11ca5b8532e7.png)
+
+
