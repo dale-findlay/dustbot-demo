@@ -1,4 +1,11 @@
-# Dustbot Demo Requirements
+# Dustbot Demo
+
+![image](https://user-images.githubusercontent.com/15716906/154826357-f08f9f5a-6e5d-498f-a032-8e2e849c7cb0.png)
+
+# Running the demo
+I've provided some pre-built binaries if you dont want to go to the trouble of building it, you can get those here:
+
+[View Releases](https://github.com/dale-findlay/dustbot-demo/releases)
 
 # Compiling the demo
 This is a pretty old piece of code, so im super sorry if it doesnt compile super easily, this is present day me adding these instructions for how to compile :)
@@ -40,6 +47,7 @@ This should output a compiled version of the demo to the Binaries folder.
 ``dustbot-demo/DustBot/Binaries/Debug/x64``
 
 The output should look like this:
+
 ![image](https://user-images.githubusercontent.com/15716906/154826337-484deaf0-b99a-4f15-a8d4-11ca5b8532e7.png)
 
 
